@@ -7,8 +7,10 @@
     <title>Wedding Planner</title>
     <link href="https://fonts.googleapis.com/css?family=Kanit|Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <script defer src="./components/Nav/Navigation.js"></script>
 </head>
 <body>
+    <div class="backdrop"></div>
     <div class="container">
         <header>
                 <div class="burger">
@@ -21,7 +23,25 @@
             </nav>
         </header>
 
+        <!-- Side nav for mobile -->
+    <nav class="mobile-nav">
+            <ul class="mobile-nav__items">
+                <li class="mobile-nav__item aside__item">
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="mobile-nav__item aside__item">
+                    <a href="signup.html">Signup</a>
+                </li>
+                <li class="mobile-nav__item aside__item">
+                    <a href="login.html">Login</a>
+                </li>
+                <li class="mobile-nav__item aside__item">
+                        <a href="photo.html">Photo Gallery</a>
+                </li>
+            </ul>
+        </nav>
+
     </div>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 </body>
 </html>
