@@ -1,0 +1,24 @@
+{
+  "name": "ui-pascal",
+  "version": "1.0.0",
+  "description": "a solution where wedding planners can showcase their portfolio and market their brand",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wedding-planner-build-week/UI-Pascal.git"
+  },
+  "author": "Pascal Ulor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wedding-planner-build-week/UI-Pascal/issues"
+  },
+  "homepage": "https://github.com/wedding-planner-build-week/UI-Pascal#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2"
+  }
+}
