@@ -1,8 +1,16 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8a3ccf82-60b7-4d40-b7df-ed85213a29ed/deploy-status)](https://app.netlify.com/sites/d-wedding-planner/deploys)
+
 # UI-Pascal
 
 # WEDDING PLANNER
 
 **WEDDING PLANNER** This is a solution where wedding planners can showcase their portfolio and market their brand
+
+
+<br />
+<br />
+<img width="1000" height="400" alt="wedding-planner-app-screenshot" src="/screenshots/dcaro.gif">
+<br />
 
 
 # Table Of Content

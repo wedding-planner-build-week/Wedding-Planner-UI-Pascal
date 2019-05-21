@@ -5,54 +5,249 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wedding Planner</title>
-    <link href="https://fonts.googleapis.com/css?family=Kanit|Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" href="./favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Kanit|Pacifico|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <script defer src="./components/Nav/Navigation.js"></script>
     <script defer src="./components/Carousel/Carousel.js"></script>
 </head>
 <body>
     <div class="backdrop"></div>
-    <div class="container">
-        <header>
-                <div class="burger">
-                        <div class="burger__btn"></div>
-                        <div class="burger__btn"></div>
-                        <div class="burger__btn"></div>
-                </div>
-            <nav class="nav__bar">
-                <h2 class="logo">Wedding Planner</h2>
-            </nav>
-        </header>
-
-        <!-- Side nav for mobile -->
-    <nav class="mobile-nav">
-            <ul class="mobile-nav__items">
-                <li class="mobile-nav__item aside__item">
-                    <a href="home.html">Home</a>
-                </li>
-                <li class="mobile-nav__item aside__item">
-                    <a href="signup.html">Signup</a>
-                </li>
-                <li class="mobile-nav__item aside__item">
-                    <a href="login.html">Login</a>
-                </li>
-                <li class="mobile-nav__item aside__item">
-                        <a href="photo.html">Photo Gallery</a>
-                </li>
-            </ul>
+    <header>
+            <div class="burger">
+                    <div class="burger__btn"></div>
+                    <div class="burger__btn"></div>
+                    <div class="burger__btn"></div>
+            </div>
+        <nav class="nav__bar">
+            <h2 class="logo">Wedding Planner</h2>
         </nav>
+    </header>
 
-        <main>
+    <!-- Side nav for mobile -->
+<nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item aside__item">
+                <a href="home.html">Home</a>
+            </li>
+            <li class="mobile-nav__item aside__item">
+                <a href="signup.html">Signup</a>
+            </li>
+            <li class="mobile-nav__item aside__item">
+                <a href="login.html">Login</a>
+            </li>
+            <li class="mobile-nav__item aside__item">
+                    <a href="photo.html">Photo Gallery</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <main class="home">
             <!-- CAROUSEL COMPONENT -->
-    <div class="carousel">
-        <div class="left-button"><</div>
-        <img src="./assets/images/carousel-1.jpg" class="img left" data-img="1"/>
-        <img src="./assets/images/carousel-4.jpg" class="img active" data-img="4" />
-        <img src="./assets/images/carousel-2.jpg" class="img right" data-img="2" />
-        <img src="./assets/images/carousel-3.jpg" class="img right" data-img="3" />
-        <img src="./assets/images/carousel-5.jpg" class="img right" data-img="5" />
-        <div class="right-button">></div>
+            <section class="intro">
+                    <div class="carousel">
+                            <div class="left-button"><</div>
+                            <img src="./assets/images/carousel-1.jpg" class="img left" data-img="1"/>
+                            <img src="./assets/images/carousel-4.jpg" class="img active" data-img="4" />
+                            <img src="./assets/images/carousel-2.jpg" class="img right" data-img="2" />
+                            <img src="./assets/images/carousel-3.jpg" class="img right" data-img="3" />
+                            <img src="./assets/images/carousel-5.jpg" class="img right" data-img="5" />
+                            <div class="right-button">></div>
+                        </div>
+                <h2>Wedding Planning At Its Best</h2>
+                <p>Be so very light. Be a gentle whisper. Let your imagination be your guide. 
+                    When things happen - enjoy them. 
+                    They're little gifts. Let your imagination be your guide.</p>
+            </section>
+
+            <!-- TABS COMPONENT -->
+  <section class="tabs">
+        <div class="posts">
+          <span class="title">TRENDING POSTS:</span>
+          <div data-tab="all" class="tab active-tab">ALL</div>
+          <div data-tab="events" class="tab">EVENTS</div>
+          <div data-tab="theme" class="tab">THEMES</div>
+          <div data-tab="gallery" class="tab">GALLERY</div>
+        </div>
+    </section>
+
+     <!-- CARDS COMPONENT -->
+  <div class="cards-container">
+
+        <!-- CARD COMPONENTS -->
+        <div class="card" data-tab="gallery">
+          <div class="headline">#JohnsonAdaezeAdventures: I thought today we would make a happy little stream.</div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-1.jpg" />
+            </div>
+            <span>By Clark Kent</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="gallery">
+          <div class="headline">#VincentHeartsKels: This is probably the greatest thing to happen in my life</div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-2.jpg" />
+            </div>
+            <span>By Lois Lane</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="theme">
+          <div class="headline">#OmowaleMelvinTieTheKnotMay21: All you have to learn here is how to have fun.</div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-3.jpg" />
+            </div>
+            <span>By Bruce Wayne</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="theme">
+          <div class="headline">#BasilAndFunkeSittingInATree: All you have to learn here is how to have fun.</div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-4.jpg" />
+            </div>
+            <span>By Barry Allen</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="gallery">
+          <div class="headline">#UlorMay2019: We'll paint one happy little tree right here.</div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-5.jpg" />
+            </div>
+            <span>By Diana Prince</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="theme">
+          <div class="headline">#WashingtonYousufWeddingBells2019: We'll paint one happy little tree right here.</div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-6.jpg" />
+            </div>
+            <span>By Arthur Curry</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="events">
+          <div class="headline">#WashingtonYousufWeddingBells2019: 
+              I get carried away with this brush cleaning.</div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-4.jpg" />
+            </div>
+            <span>By Victor Stones</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="events">
+          <div class="headline">#AdaezeJohnsonTieTheKnotMay21: We'll throw some old gray clouds in here just sneaking around and having fun.</div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-1.jpg" />
+            </div>
+            <span>By Hal Jordan</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="gallery">
+          <div class="headline">Don't fiddle with it all day. Imagination is the key to painting.</div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-3.jpg" />
+            </div>
+            <span>By Constantine</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="theme">
+          <div class="headline">Don't fiddle with it all day. Imagination is the key to painting.</div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-6.jpg" />
+            </div>
+            <span>By Clark Kent</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="gallery">
+          <div class="headline">Don't fiddle with it all day. Imagination is the key to painting.</div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/bracelets-bright-celebration-1456613.jpg" />
+            </div>
+            <span>By Lois Lane</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="gallery">
+          <div class="headline">Don't fiddle with it all day. Imagination is the key to painting.</div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-4.jpg" />
+            </div>
+            <span>By Lois Lane</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="theme">
+          <div class="headline">Don't fiddle with it all day. Imagination is the key to painting.</div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-3.jpg" />
+            </div>
+            <span>By Barry Allen</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="gallery">
+          <div class="headline">Don't fiddle with it all day. Imagination is the key to painting.</div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-5.jpg" />
+            </div>
+            <span>By Wally West</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="theme">
+          <div class="headline">Don't fiddle with it all day. Imagination is the key to painting.</div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-4.jpg" />
+            </div>
+            <span>By Joe West</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="theme">
+          <div class="headline">Don't fiddle with it all day. Imagination is the key to painting.</div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-1.jpg" />
+            </div>
+            <span>By Iris West</span>
+          </div>
+        </div>
+        <div class="card" data-tab="events">
+          <div class="headline">Don't fiddle with it all day. Imagination is the key to painting.</div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-3.jpg" />
+            </div>
+            <span>By Iris West</span>
+          </div>
+        </div>
+    
       </div>
+    
         </main>
 
     </div>

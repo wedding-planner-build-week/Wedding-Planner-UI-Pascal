@@ -1,14 +1,19 @@
 // Mixins Here
-.flex-style(@justifyContent: none, @alignItems: none, @direction: row) {
+.flex-style(@justifyContent: none, @alignItems: none, @wrap: none, @direction: row) {
     display: flex;
     justify-content: @justifyContent;
     align-items: @alignItems;
+    flex-wrap: @wrap;
     flex-direction: @direction;
 }
 
 .padding-styles(@top, @right, @bottom, @left) {
     padding: @top @right @bottom @left;
 }
+
+.border-bottom-green {
+    border-bottom: 1px solid @color-secondary;
+  }
 
 .width-100 {
     width: 100%;
