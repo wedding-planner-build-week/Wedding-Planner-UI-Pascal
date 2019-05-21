@@ -158,6 +158,11 @@ p {
   font-size: 1.6rem;
   padding: 1rem 1rem;
 }
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 .border-bottom-green {
   border-bottom: 1px solid #bcddb3;
 }
@@ -174,15 +179,37 @@ p {
   vertical-align: middle;
   height: 3rem;
 }
-.nav__bar .logo {
-  font-family: 'Pacifico', cursive;
-  font-size: 2rem;
+.nav__bar .nav__item {
+  display: none;
 }
-.nav__bar a {
+@media (min-width: 1024px) {
+  .nav__bar .nav__item {
+    display: block;
+  }
+}
+.nav__bar .nav__item a {
   text-decoration: none;
   color: #000;
   padding: 1rem 1rem 1rem 1rem;
   font-size: 1.5rem;
+}
+.nav__bar .nav__item a:hover {
+  color: #fff;
+}
+@media (min-width: 1024px) {
+  .nav__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: none;
+    flex-direction: row;
+    max-width: 800px;
+    height: 5rem;
+  }
+}
+.nav__bar .logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
 }
 /* Mobile Nav */
 .mobile-nav {
@@ -242,6 +269,11 @@ header .burger {
   padding: 0 0.2rem 0 0.2rem;
   vertical-align: middle;
 }
+@media (min-width: 1024px) {
+  header .burger {
+    display: none;
+  }
+}
 header .burger .burger__btn {
   width: 100%;
   height: 0.2rem;
@@ -268,6 +300,26 @@ header .burger .burger__btn {
 .home .intro h2 {
   margin-top: 20px;
 }
+.home .intro .btn {
+  border-radius: 0.5rem;
+  width: 15rem;
+  background-color: #bcddb3;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  margin: 1rem auto;
+}
+.home .intro .btn:hover {
+  border-radius: 0.5rem;
+  width: 15rem;
+  background-color: #fecdaa;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #000;
+  margin: 1rem auto;
+}
 .carousel {
   width: 100%;
   display: flex;
@@ -278,6 +330,11 @@ header .burger .burger__btn {
   height: 20rem;
   position: relative;
   overflow: hidden;
+}
+@media (min-width: 1024px) {
+  .carousel {
+    height: 40rem;
+  }
 }
 .carousel .left-button,
 .carousel .right-button {

@@ -14,6 +14,16 @@
 .border-bottom-green {
     border-bottom: 1px solid @color-secondary;
   }
+  .button(@bgColor, @fontSize, @textColor){
+    border-radius: 0.5rem;
+    width: 15rem;
+    background-color: @bgColor;
+    .padding-styles(1rem, 1rem, 1rem, 1rem);
+    text-align: center;
+    font-size: @fontSize;
+    color: @textColor;
+    margin: 1rem auto;
+}
 
 .width-100 {
     width: 100%;
