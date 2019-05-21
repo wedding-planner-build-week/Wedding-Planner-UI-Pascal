@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Kanit|Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <script defer src="./components/Nav/Navigation.js"></script>
+    <script defer src="./components/Carousel/Carousel.js"></script>
 </head>
 <body>
     <div class="backdrop"></div>
@@ -40,6 +41,19 @@
                 </li>
             </ul>
         </nav>
+
+        <main>
+            <!-- CAROUSEL COMPONENT -->
+    <div class="carousel">
+        <div class="left-button"><</div>
+        <img src="./assets/images/carousel-1.jpg" class="img left" data-img="1"/>
+        <img src="./assets/images/carousel-4.jpg" class="img active" data-img="4" />
+        <img src="./assets/images/carousel-2.jpg" class="img right" data-img="2" />
+        <img src="./assets/images/carousel-3.jpg" class="img right" data-img="3" />
+        <img src="./assets/images/carousel-5.jpg" class="img right" data-img="5" />
+        <div class="right-button">></div>
+      </div>
+        </main>
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>

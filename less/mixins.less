@@ -1,5 +1,5 @@
 // Mixins Here
-.flex-style(@justifyContent, @alignItems, @direction) {
+.flex-style(@justifyContent: none, @alignItems: none, @direction: row) {
     display: flex;
     justify-content: @justifyContent;
     align-items: @alignItems;
@@ -9,3 +9,7 @@
 .padding-styles(@top, @right, @bottom, @left) {
     padding: @top @right @bottom @left;
 }
+
+.width-100 {
+    width: 100%;
+  }
