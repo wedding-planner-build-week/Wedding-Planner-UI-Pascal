@@ -159,6 +159,9 @@ p {
   font-size: 1.6rem;
   padding: 1rem 1rem;
 }
+.border-bottom-green {
+  border-bottom: 1px solid #bcddb3;
+}
 .width-100 {
   width: 100%;
 }
@@ -330,6 +333,55 @@ header .burger .burger__btn {
 .carousel .active {
   transform: translateX(0%);
 }
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-wrap: none;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+.cards-container .card {
+  border-bottom: 1px solid #bcddb3;
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-wrap: none;
+  flex-direction: column;
+  background-color: #fff;
+  width: 380px;
+  margin-bottom: 16px;
+  padding: 24px;
+}
+.cards-container .card .headline {
+  font-size: 25px;
+  font-family: Didot, serif;
+}
+.cards-container .card .wedding_planner {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-wrap: none;
+  flex-direction: row;
+  margin-top: 15px;
+}
+.cards-container .card .wedding_planner .img-container {
+  padding-right: 10px;
+  border-right: 1px solid #bcddb3;
+  height: 40px;
+}
+.cards-container .card .wedding_planner .img-container img {
+  width: 40px;
+  height: 100%;
+}
+.cards-container .card .wedding_planner span {
+  padding-left: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
 .tabs {
   display: flex;
   justify-content: center;
@@ -340,19 +392,19 @@ header .burger .burger__btn {
   height: 47px;
   background-color: #fff;
 }
-.tabs .categories {
+.tabs .posts {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
 }
-.tabs .categories .title {
+.tabs .posts .title {
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: bold;
 }
-.tabs .categories .tab {
+.tabs .posts .tab {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -367,10 +419,10 @@ header .burger .burger__btn {
   cursor: pointer;
   font-weight: bold;
 }
-.tabs .categories .tab:hover {
+.tabs .posts .tab:hover {
   text-decoration: underline;
 }
-.tabs .categories .active-tab {
+.tabs .posts .active-tab {
   background-color: #fff;
   color: #fecdaa;
   border: 2px solid #fecdaa;
