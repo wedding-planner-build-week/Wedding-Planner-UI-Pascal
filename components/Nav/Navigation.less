@@ -3,18 +3,29 @@
     .flex-style(center, center, none, row);
     vertical-align: middle;
     height: 3rem;
+    .nav__item {
+        display: none;
+        @media @desktop {
+            display: block;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+            .padding-styles(1rem, 1rem, 1rem, 1rem);
+            font-size: 1.5rem;
+            &:hover {
+                color: @color-white;
+            }
+        }
+    }
     @media @desktop {
+        .flex-style(space-between, center, none, row);
+        max-width: 800px;
         height: 5rem;
     }
     .logo {
         font-family: @logoText;
         font-size: 2rem
-    }
-    a {
-        text-decoration: none;
-        color: #000;
-        .padding-styles(1rem, 1rem, 1rem, 1rem);
-        font-size: 1.5rem;
     }
 }
 

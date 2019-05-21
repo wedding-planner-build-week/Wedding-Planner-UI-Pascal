@@ -19,5 +19,11 @@
         h2 {
           margin-top: 20px;
         }
+        .btn {
+          .button(@color-secondary, @buttonFontSize, @color-white);
+          &:hover {
+            .button(@color-primary, @buttonFontSize, @color-black);
+          }
+        }
       }
 }
