@@ -138,8 +138,6 @@ body {
 }
 h1,
 h2,
-h3,
-h4,
 h5 {
   font-family: 'Indie Flower', cursive;
 }
@@ -151,8 +149,9 @@ h2 {
   padding: 1rem 1rem;
 }
 h4 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding-bottom: 10px;
+  font-family: 'Kanit', sans-serif;
 }
 p {
   line-height: 1.5;
@@ -351,13 +350,13 @@ header .burger .burger__btn {
   flex-wrap: none;
   flex-direction: column;
   background-color: #fff;
-  width: 380px;
+  width: 38rem;
   margin-bottom: 16px;
   padding: 24px;
 }
 .cards-container .card .headline {
   font-size: 25px;
-  font-family: Didot, serif;
+  width: 100%;
 }
 .cards-container .card .wedding_planner {
   display: flex;
@@ -426,4 +425,21 @@ header .burger .burger__btn {
   background-color: #fff;
   color: #fecdaa;
   border: 2px solid #fecdaa;
+}
+footer {
+  background-color: #bcddb3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: none;
+  flex-direction: column;
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+  vertical-align: middle;
+}
+footer span {
+  color: #fff;
+  vertical-align: middle;
+  font-size: 1.2rem;
 }
