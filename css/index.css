@@ -137,7 +137,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 body {
-  background: url(../assets/images/bg.png) center / cover no-repeat border-box;
+  background: url(../assets/images/bg.png) center / cover no-repeat fixed;
 }
 h1,
 h2,
@@ -436,6 +436,30 @@ header .burger .burger__btn {
   height: 100%;
 }
 .cards-container .card .wedding_planner span {
+  padding-left: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.cards-container .img__card {
+  border-bottom: 1px solid #bcddb3;
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-wrap: none;
+  flex-direction: column;
+  background-color: #fff;
+  max-width: 38rem;
+  height: auto;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  margin-bottom: 1rem;
+}
+.cards-container .img__card img {
+  max-width: 100%;
+  height: auto;
+  padding: 0 1rem 0 1rem;
+}
+.cards-container .img__card span {
   padding-left: 10px;
   font-size: 12px;
   letter-spacing: 1px;

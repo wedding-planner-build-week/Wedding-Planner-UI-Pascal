@@ -35,4 +35,24 @@
         }
       }
     }
+    .img__card {
+        .border-bottom-green();
+        .flex-style(space-between, none, none, column);
+        background-color: @color-white;
+        max-width: 38rem;
+        height: auto;
+        .padding-styles(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+        margin-bottom: 1rem;
+            img {
+              max-width: 100%;
+              height: auto;
+              .padding-styles(0, 1rem, 0, 1rem);
+            }
+          span {
+            padding-left: 10px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            font-weight: bold;
+          }
+      }
   }
