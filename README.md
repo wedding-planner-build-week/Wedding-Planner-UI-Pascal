@@ -9,7 +9,7 @@
 
 <br />
 <br />
-<img width="1000" height="400" alt="wedding-planner-app-screenshot" src="/screenshots/dcaro.gif">
+<img width="400" height="400" alt="wedding-planner-app-screenshot" src="/screenshots/dcaro.gif">
 <br />
 
 

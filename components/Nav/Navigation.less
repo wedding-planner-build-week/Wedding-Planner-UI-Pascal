@@ -3,9 +3,17 @@
     .flex-style(center, center, none, row);
     vertical-align: middle;
     height: 3rem;
+    @media @tablet {
+        .flex-style(center, center, none, column);
+        height: 5rem;
+        margin-bottom: 2rem;
+    }
     .nav__item {
         display: none;
         @media @desktop {
+            display: block;
+        }
+        @media @tablet {
             display: block;
         }
         a {
