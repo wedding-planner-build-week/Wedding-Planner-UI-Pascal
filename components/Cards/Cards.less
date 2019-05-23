@@ -1,0 +1,79 @@
+.cards-container {
+    .flex-style(space-evenly);
+    .width-100();
+    margin-top: 16px;
+    flex-wrap: wrap;
+    .card {
+      .border-bottom-green();
+      .flex-style(space-between, none, none, column);
+      background-color: @color-white;
+      width: 38rem;
+      margin-bottom: 16px;
+      padding: 24px;
+      .headline {
+        font-size: 25px;
+        
+        .width-100();
+      }
+      .wedding_planner {
+        .flex-style(none, center);
+        margin-top: 15px;
+        .img-container {
+          padding-right: 10px;
+          border-right: 1px solid @color-secondary;
+          height: 40px;
+          img {
+            width: 40px;
+            height: 100%;
+          }
+        }
+        span {
+          padding-left: 10px;
+          font-size: 12px;
+          letter-spacing: 1px;
+          font-weight: bold;
+        }
+      }
+    }
+    .img__card {
+        .border-bottom-green();
+        .flex-style(space-between, none, none, column);
+        background-color: @color-white;
+        max-width: 38rem;
+        height: auto;
+        .padding-styles(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+        margin-bottom: 1rem;
+            img {
+              max-width: 100%;
+              height: auto;
+              .padding-styles(0, 1rem, 0, 1rem);
+            }
+          span {
+            padding-left: 10px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            font-weight: bold;
+          }
+          .deets {
+            .flex-style(center, center, none, column);
+            border-radius: 1rem;
+            text-align: center;
+            color: @color-secondary;
+            position: absolute;
+            font-size: 10rem;
+            letter-spacing: 1px;
+            font-weight: bold;
+            overflow: hidden;
+            height: 0;
+            width: 30rem;
+            background: rgba(0, 0, 0, 0.5);
+            margin: 12rem 0 0 2.5rem;
+            transition: 1s ease;
+          }
+      
+          &:hover .deets {
+            height: 15rem;
+          }
+          
+      }
+  }

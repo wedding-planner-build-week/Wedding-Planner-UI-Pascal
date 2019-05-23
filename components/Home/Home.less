@@ -1,0 +1,39 @@
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.shade{
+    display: block;
+}
+
+.home {
+    .intro {
+        border-bottom: 2px dashed @color-border;
+        .text__wrap{
+          .flex-style(center, center, wrap, column);
+          text-align: center;
+          h2 {
+            margin-top: 20px;
+          }
+          p {
+            .padding-styles(.5rem, 3rem, .5rem, 3rem);
+            @media @tablet {
+              .padding-styles(1rem, 10rem, .5rem, 10rem);
+          }
+          }
+        }
+        .btn {
+          .button(@color-secondary, @buttonFontSize, @color-white);
+          &:hover {
+            .button(@color-primary, @buttonFontSize, @color-black);
+          }
+        }
+      }
+}

@@ -1,0 +1,30 @@
+// Mixins Here
+.flex-style(@justifyContent: none, @alignItems: none, @wrap: none, @direction: row) {
+    display: flex;
+    justify-content: @justifyContent;
+    align-items: @alignItems;
+    flex-wrap: @wrap;
+    flex-direction: @direction;
+}
+
+.padding-styles(@top, @right, @bottom, @left) {
+    padding: @top @right @bottom @left;
+}
+
+.border-bottom-green {
+    border-bottom: 1px solid @color-secondary;
+  }
+  .button(@bgColor, @fontSize, @textColor){
+    border-radius: 0.5rem;
+    width: 15rem;
+    background-color: @bgColor;
+    .padding-styles(1rem, 1rem, 1rem, 1rem);
+    text-align: center;
+    font-size: @fontSize;
+    color: @textColor;
+    margin: 1rem auto;
+}
+
+.width-100 {
+    width: 100%;
+  }

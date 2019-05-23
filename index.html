@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wedding Planner</title>
+    <link rel="icon" href="./favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Kanit|Pacifico|Roboto&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="./components/Nav/Navigation.js"></script>
+    <script defer src="./components/Carousel/Carousel.js"></script>
+    <script defer src="./components/Tabs/Tabs.js"></script>
+</head>
+<body>
+    <div class="backdrop"></div>
+    <header>
+            <div class="burger">
+                    <div class="burger__btn"></div>
+                    <div class="burger__btn"></div>
+                    <div class="burger__btn"></div>
+            </div>
+        <nav class="nav__bar">
+            <h2 class="logo">Wedding Planner</h2>
+            <div class="nav__item">
+                <a href="#" class="href">Home</a>
+                <a href="https://weddingplanner.netlify.com/register" class="href">Signup</a>
+                <a href="https://weddingplanner.netlify.com/login" class="href">Login</a>
+                <a href="about.html" class="href">About Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Side nav for mobile -->
+<nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item aside__item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="mobile-nav__item aside__item">
+                <a href="https://weddingplanner.netlify.com/register">Signup</a>
+            </li>
+            <li class="mobile-nav__item aside__item">
+                <a href="https://weddingplanner.netlify.com/login">Login</a>
+            </li>
+            <li class="mobile-nav__item aside__item">
+                    <a href="about.html">About Us</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <main class="home">
+            <!-- CAROUSEL COMPONENT -->
+            <section class="intro">
+                    <div class="carousel">
+                            <div class="left-button"><</div>
+                            <img src="./assets/images/carousel-1.jpg" class="img left" data-img="1" alt="couple hold hands"/>
+                            <img src="./assets/images/carousel-4.jpg" class="img active" data-img="4" alt="couple on water"/>
+                            <img src="./assets/images/carousel-2.jpg" class="img right" data-img="2" alt="asian couple"/>
+                            <img src="./assets/images/carousel-3.jpg" class="img right" data-img="3" alt="church wedding"/>
+                            <img src="./assets/images/carousel-5.jpg" class="img right" data-img="5" alt="african couple"/>
+                            <div class="right-button">></div>
+                        </div>
+                        <section class="text__wrap">
+                            <h2>Wedding Planning At Its Best</h2>
+                            <p>Your wedding is one of the biggest days of your life! 
+                                It is important you have stylish wedding stationery that 
+                                you’re proud to send and the perfect palettes to paint your wedding day. 
+                                We love sharing real stories that inspire us—and we hope they
+                                 inspire you throughout your wedding planning journey.</p>
+                        </section>
+                
+                    <div class="btn animated bounce delay-2s">
+                            Get Started
+                    </div>
+            </section>
+
+            <!-- TABS COMPONENT -->
+  <section class="tabs">
+        <div class="posts">
+          <span class="title">TRENDING POSTS:</span>
+          <div data-tab="all" class="tab active-tab">ALL</div>
+          <div data-tab="events" class="tab">EVENTS</div>
+          <div data-tab="theme" class="tab">THEMES</div>
+          <div data-tab="gallery" class="tab">GALLERY</div>
+        </div>
+    </section>
+
+     <!-- CARDS COMPONENT -->
+  <section class="cards-container">
+
+        <!-- CARD COMPONENTS -->
+        <div class="card" data-tab="events">
+          <div class="headline"><h4>#JohnsonAdaezeAdventures: 
+              I thought today we would make a happy little stream.</h4></div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-1.jpg" alt="indian lady" />
+            </div>
+            <span>By Clark Kent</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="events">
+          <div class="headline"><h4>#VincentHeartsKels: 
+              This is probably the greatest thing to happen in my life</h4></div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-2.jpg" alt="happy couple"/>
+            </div>
+            <span>By Lois Lane</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="events">
+          <div class="headline"><h4>#OmowaleMelvinTieTheKnot: 
+              All you have to learn here is how to have fun.</h4></div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-3.jpg" alt="couple sunrise"/>
+            </div>
+            <span>By Bruce Wayne</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="events">
+          <div class="headline"><h4>#BasilAndFunkeSittingInATree: 
+              All you have to learn here is how to have fun.</h4></div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-4.jpg" alt="smiling couple"/>
+            </div>
+            <span>By Barry Allen</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="events">
+          <div class="headline"><h4>#UlorMay2019: 
+              We'll paint one happy little tree right here.</h4></div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-5.jpg" alt="love kiss"/>
+            </div>
+            <span>By Diana Prince</span>
+          </div>
+        </div>
+    
+        <div class="card" data-tab="events">
+          <div class="headline"><h4>#WashingtonYousufWeddingBells: 
+              We'll paint one happy little tree right here.</h4></div>
+          <div class="wedding_planner">
+            <div class="img-container">
+              <img src="./assets/images/post-6.jpg" alt="beachside couple"/>
+            </div>
+            <span>By Arthur Curry</span>
+          </div>
+        </div>
+    
+        <div class="img__card" data-tab="theme">
+            <img src="./assets/images/theme modern.jpg" alt="modern theme"/>
+            <span class="deets"><p>Modern Theme</p></span>
+        </div>
+    
+        <div class="img__card" data-tab="theme">
+                <img src="./assets/images/theme tropical.jpg" alt="Tropical"/>
+                <span class="deets"><p>Tropical Theme</p></span>
+        </div>
+    
+        <div class="img__card" data-tab="theme">
+                <img src="./assets/images/theme romantic.jpg" alt="romantic"/>
+                <span class="deets"><p>Romantic Theme</p></span>
+        </div>
+    
+        <div class="img__card" data-tab="theme">
+                <img src="./assets/images/theme modern.jpeg" alt="modern theme 2"/>
+                <span class="deets"><p>Modern Theme</p></span>
+        </div>
+
+        <div class="img__card" data-tab="gallery">
+            <img src="./assets/images/gallery1.jpg" alt="african"/>
+                      
+        </div>
+        <div class="img__card" data-tab="gallery">
+                <img src="./assets/images/gallery2.jpg" alt="strike an pose"/>
+                          
+        </div>
+        <div class="img__card" data-tab="gallery">
+                <img src="./assets/images/gallery3.jpg" alt="bride"/>
+                          
+        </div>
+        <div class="img__card" data-tab="gallery">
+                <img src="./assets/images/gallery4.jpg" alt="couple by the beach"/>
+                          
+        </div>
+      </section>
+    
+        </main>
+
+    </div>
+    <footer>
+            <span>Copyright of &copy;2019 Lambda Build Week Project By Pascal Ulor</span>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+</body>
+</html>
