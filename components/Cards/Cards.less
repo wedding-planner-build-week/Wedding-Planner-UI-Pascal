@@ -54,5 +54,26 @@
             letter-spacing: 1px;
             font-weight: bold;
           }
+          .deets {
+            .flex-style(center, center, none, column);
+            border-radius: 1rem;
+            text-align: center;
+            color: @color-secondary;
+            position: absolute;
+            font-size: 10rem;
+            letter-spacing: 1px;
+            font-weight: bold;
+            overflow: hidden;
+            height: 0;
+            width: 30rem;
+            background: rgba(0, 0, 0, 0.5);
+            margin: 12rem 0 0 2.5rem;
+            transition: 1s ease;
+          }
+      
+          &:hover .deets {
+            height: 15rem;
+          }
+          
       }
   }

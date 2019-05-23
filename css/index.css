@@ -407,6 +407,20 @@ header .burger .burger__btn {
   height: auto;
   padding: 0 1rem 0 1rem;
 }
+.cards-container .about__card .role {
+  border-radius: 1rem;
+  text-align: center;
+  color: #bcddb3;
+  position: absolute;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  overflow: hidden;
+  height: 3rem;
+  width: 30rem;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 30rem 0 0 0;
+}
 div[data-tab="1"],
 div[data-tab="2"],
 div[data-tab="3"],
@@ -442,7 +456,7 @@ div[data-tab="2"]:hover .deets,
 div[data-tab="3"]:hover .deets,
 div[data-tab="4"]:hover .deets,
 div[data-tab="5"]:hover .deets {
-  height: 20rem;
+  height: 15rem;
 }
 div[data-tab="1"] #social,
 div[data-tab="2"] #social,
@@ -720,6 +734,29 @@ div[data-tab="5"] .githubBtn:hover {
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: bold;
+}
+.cards-container .img__card .deets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: none;
+  flex-direction: column;
+  border-radius: 1rem;
+  text-align: center;
+  color: #bcddb3;
+  position: absolute;
+  font-size: 10rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  overflow: hidden;
+  height: 0;
+  width: 30rem;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 12rem 0 0 2.5rem;
+  transition: 1s ease;
+}
+.cards-container .img__card:hover .deets {
+  height: 15rem;
 }
 .tabs {
   display: flex;
