@@ -34,4 +34,3 @@ class Carousel {
 
 const carousel = document.querySelector('.carousel');
 const slide = new Carousel(carousel);
-console.log(slide);
