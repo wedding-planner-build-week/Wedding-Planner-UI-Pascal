@@ -1,0 +1,165 @@
+.about {
+  .intro {
+    border-bottom: 2px dashed @color-border;
+
+    .text__wrap {
+      .flex-style(center, center, wrap, column);
+      text-align: center;
+
+      h2 {
+        margin-top: 20px;
+      }
+
+      p {
+        .padding-styles(.5rem, 3rem, .5rem, 3rem);
+      }
+    }
+  }
+}
+
+
+
+.cards-container {
+  .flex-style(space-evenly);
+  .width-100();
+  margin-top: 16px;
+  flex-wrap : wrap;
+
+  .about__card {
+    border-radius: 1rem;
+    .border-bottom-green();
+    .flex-style(space-between, center, none, column);
+    background-color: @color-white;
+    max-width       : 38rem;
+    height          : auto;
+    .padding-styles(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+    margin-bottom: 1rem;
+
+    img {
+      border-radius: 2rem;
+      max-width: 100%;
+      height   : auto;
+      .padding-styles(0, 1rem, 0, 1rem);
+    }
+    
+  }
+}
+
+  div[data-tab= "1"], div[data-tab= "2"], div[data-tab= "3"], div[data-tab= "4"],
+  div[data-tab= "5"] {
+    .deets {
+      border-radius: 1rem;
+      text-align: center;
+      color: @color-secondary;
+      position: absolute;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      font-weight: bold;
+      overflow: hidden;
+      height: 0;
+      width: 30rem;
+      background: rgba(0, 0, 0, 0.5);
+      margin: 12rem 0 0 0;
+      transition: 1s ease;
+    }
+
+    &:hover .deets {
+      height: 20rem;
+    }
+
+
+  /*Social Handles*/
+
+#social {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.smGlobalBtn { /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border:2px solid #ddd; /* add border to the buttons */
+    box-shadow: 0 3px 3px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px;
+    -moz-border-radius:27px;
+    -webkit-border-radius:27px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5; /* change the border color on mouse hover */
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+      
+}
+
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+      border-color: #00ABE3;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+
+.linkedinBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+      color: #0094BC;
+      background: #fff;
+      border-color: #0094BC;
+}
+
+
+/* github button class*/
+.githubBtn{
+    background: #e88845;
+}
+
+.githubBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09b"; /* add rss icon */
+}
+
+.githubBtn:hover{
+      color: #45e868;
+      background: #fff;
+      border-color: #45e868;
+}
+
+
+}
