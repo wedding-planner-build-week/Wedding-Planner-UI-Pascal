@@ -232,14 +232,18 @@ p {
 }
 /* Mobile Nav */
 .mobile-nav {
-  display: none;
+  display: block;
+  max-width: 0px;
+  overflow: hidden;
+  transition: all 0.25s ease-in-out;
   position: fixed;
+  top: 75px;
+  width: 350px;
   z-index: 101;
   top: 0;
   left: 0;
   background: #bcddb3;
   width: 60%;
-  /* height: 100vh; */
   margin-top: 3rem;
 }
 .mobile-nav .mobile-nav__items {
@@ -270,6 +274,10 @@ p {
 .mobile-nav .mobile-nav__items .mobile-nav__item a:hover {
   color: #FFFFFF;
   border-bottom: 5px solid #FFFFFF;
+}
+.open {
+  max-width: 351px;
+  transform: translateX(1px);
 }
 header {
   background-color: #fecdaa;
@@ -315,7 +323,7 @@ header .burger .burger__btn {
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
 }
-.open {
+.shade {
   display: block;
 }
 .home .intro {

@@ -4,30 +4,32 @@
 */
 const backdrop = document.querySelector('.backdrop');
 const burgerButton = document.querySelector('.burger');
-// const mobileNav = document.querySelector('.mobile-nav');
+const mobileNav = document.querySelector('.mobile-nav');
 
 
 const backDrop = () => {
-  backdrop.classList.remove('open');
+  backdrop.classList.remove('shade');
 };
-// eslint-disable-next-line no-undef
-const pascal = TweenMax.fromTo('.mobile-nav', 0.8, { x: -0, display: 'block', reversed: true }, { x: -500, display: 'none' });
 const mobileButton = () => {
-  // eslint-disable-next-line no-unused-expressions
-  pascal.reversed() && backdrop.classList.add('open') ? pascal.play() : pascal.reverse();
+  mobileNav.classList.add('open');
+  backdrop.classList.add('shade');
 };
 const removeBackDrop = () => {
-  pascal.play();
+  mobileNav.classList.remove('open');
   backDrop();
 };
 
 const animate = () => {
-  burgerButton.addEventListener('click', () => mobileButton());
-  backdrop.addEventListener('click', () => removeBackDrop());
+  burgerButton.addEventListener('click', mobileButton);
+  backdrop.addEventListener('click', removeBackDrop);
 };
 
-burgerButton.addEventListener('click', () => {
-  animate();
-  backdrop.removeEventListener('click', removeBackDrop);
-  burgerButton.removeEventListener('click', mobileButton);
+animate();
+
+/**
+ * Animation
+ */
+const gallery = document.querySelectorAll('div[class*="card"]');
+gallery.forEach((card) => {
+  TweenMax.from(card, 2, { x: 100, ease: Bounce.easeOut });
 });
