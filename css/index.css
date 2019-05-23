@@ -321,8 +321,24 @@ header .burger .burger__btn {
 .home .intro {
   border-bottom: 2px dashed #333;
 }
-.home .intro h2 {
+.home .intro .text__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+.home .intro .text__wrap h2 {
   margin-top: 20px;
+}
+.home .intro .text__wrap p {
+  padding: 0.5rem 3rem 0.5rem 3rem;
+}
+@media (min-width: 750px) {
+  .home .intro .text__wrap p {
+    padding: 1rem 10rem 0.5rem 10rem;
+  }
 }
 .home .intro .btn {
   border-radius: 0.5rem;
@@ -343,6 +359,225 @@ header .burger .burger__btn {
   font-size: 2rem;
   color: #000;
   margin: 1rem auto;
+}
+.about .intro {
+  border-bottom: 2px dashed #333;
+}
+.about .intro .text__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+.about .intro .text__wrap h2 {
+  margin-top: 20px;
+}
+.about .intro .text__wrap p {
+  padding: 0.5rem 3rem 0.5rem 3rem;
+}
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-wrap: none;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+.cards-container .about__card {
+  border-radius: 1rem;
+  border-bottom: 1px solid #bcddb3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: none;
+  flex-direction: column;
+  background-color: #fff;
+  max-width: 38rem;
+  height: auto;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  margin-bottom: 1rem;
+}
+.cards-container .about__card img {
+  border-radius: 2rem;
+  max-width: 100%;
+  height: auto;
+  padding: 0 1rem 0 1rem;
+}
+div[data-tab="1"],
+div[data-tab="2"],
+div[data-tab="3"],
+div[data-tab="4"],
+div[data-tab="5"] {
+  /*Social Handles*/
+  /* facebook button class*/
+  /* twitter button class*/
+  /* linkedin button class*/
+  /* github button class*/
+}
+div[data-tab="1"] .deets,
+div[data-tab="2"] .deets,
+div[data-tab="3"] .deets,
+div[data-tab="4"] .deets,
+div[data-tab="5"] .deets {
+  border-radius: 1rem;
+  text-align: center;
+  color: #bcddb3;
+  position: absolute;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  overflow: hidden;
+  height: 0;
+  width: 30rem;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 12rem 0 0 0;
+  transition: 1s ease;
+}
+div[data-tab="1"]:hover .deets,
+div[data-tab="2"]:hover .deets,
+div[data-tab="3"]:hover .deets,
+div[data-tab="4"]:hover .deets,
+div[data-tab="5"]:hover .deets {
+  height: 20rem;
+}
+div[data-tab="1"] #social,
+div[data-tab="2"] #social,
+div[data-tab="3"] #social,
+div[data-tab="4"] #social,
+div[data-tab="5"] #social {
+  margin: 20px 10px;
+  text-align: center;
+}
+div[data-tab="1"] .smGlobalBtn,
+div[data-tab="2"] .smGlobalBtn,
+div[data-tab="3"] .smGlobalBtn,
+div[data-tab="4"] .smGlobalBtn,
+div[data-tab="5"] .smGlobalBtn {
+  /* global button class */
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ddd;
+  /* add border to the buttons */
+  box-shadow: 0 3px 3px #999;
+  padding: 0px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 27px;
+  -moz-border-radius: 27px;
+  -webkit-border-radius: 27px;
+}
+div[data-tab="1"] .facebookBtn,
+div[data-tab="2"] .facebookBtn,
+div[data-tab="3"] .facebookBtn,
+div[data-tab="4"] .facebookBtn,
+div[data-tab="5"] .facebookBtn {
+  background: #4060A5;
+}
+div[data-tab="1"] .facebookBtn:before,
+div[data-tab="2"] .facebookBtn:before,
+div[data-tab="3"] .facebookBtn:before,
+div[data-tab="4"] .facebookBtn:before,
+div[data-tab="5"] .facebookBtn:before {
+  /* use :before to add the relevant icons */
+  font-family: "FontAwesome";
+  content: "\f09a";
+  /* add facebook icon */
+}
+div[data-tab="1"] .facebookBtn:hover,
+div[data-tab="2"] .facebookBtn:hover,
+div[data-tab="3"] .facebookBtn:hover,
+div[data-tab="4"] .facebookBtn:hover,
+div[data-tab="5"] .facebookBtn:hover {
+  color: #4060A5;
+  background: #fff;
+  border-color: #4060A5;
+  /* change the border color on mouse hover */
+}
+div[data-tab="1"] .twitterBtn,
+div[data-tab="2"] .twitterBtn,
+div[data-tab="3"] .twitterBtn,
+div[data-tab="4"] .twitterBtn,
+div[data-tab="5"] .twitterBtn {
+  background: #00ABE3;
+}
+div[data-tab="1"] .twitterBtn:before,
+div[data-tab="2"] .twitterBtn:before,
+div[data-tab="3"] .twitterBtn:before,
+div[data-tab="4"] .twitterBtn:before,
+div[data-tab="5"] .twitterBtn:before {
+  font-family: "FontAwesome";
+  content: "\f099";
+  /* add twitter icon */
+}
+div[data-tab="1"] .twitterBtn:hover,
+div[data-tab="2"] .twitterBtn:hover,
+div[data-tab="3"] .twitterBtn:hover,
+div[data-tab="4"] .twitterBtn:hover,
+div[data-tab="5"] .twitterBtn:hover {
+  color: #00ABE3;
+  background: #fff;
+  border-color: #00ABE3;
+}
+div[data-tab="1"] .linkedinBtn,
+div[data-tab="2"] .linkedinBtn,
+div[data-tab="3"] .linkedinBtn,
+div[data-tab="4"] .linkedinBtn,
+div[data-tab="5"] .linkedinBtn {
+  background: #0094BC;
+}
+div[data-tab="1"] .linkedinBtn:before,
+div[data-tab="2"] .linkedinBtn:before,
+div[data-tab="3"] .linkedinBtn:before,
+div[data-tab="4"] .linkedinBtn:before,
+div[data-tab="5"] .linkedinBtn:before {
+  font-family: "FontAwesome";
+  content: "\f0e1";
+  /* add linkedin icon */
+}
+div[data-tab="1"] .linkedinBtn:hover,
+div[data-tab="2"] .linkedinBtn:hover,
+div[data-tab="3"] .linkedinBtn:hover,
+div[data-tab="4"] .linkedinBtn:hover,
+div[data-tab="5"] .linkedinBtn:hover {
+  color: #0094BC;
+  background: #fff;
+  border-color: #0094BC;
+}
+div[data-tab="1"] .githubBtn,
+div[data-tab="2"] .githubBtn,
+div[data-tab="3"] .githubBtn,
+div[data-tab="4"] .githubBtn,
+div[data-tab="5"] .githubBtn {
+  background: #e88845;
+}
+div[data-tab="1"] .githubBtn:before,
+div[data-tab="2"] .githubBtn:before,
+div[data-tab="3"] .githubBtn:before,
+div[data-tab="4"] .githubBtn:before,
+div[data-tab="5"] .githubBtn:before {
+  font-family: "FontAwesome";
+  content: "\f09b";
+  /* add rss icon */
+}
+div[data-tab="1"] .githubBtn:hover,
+div[data-tab="2"] .githubBtn:hover,
+div[data-tab="3"] .githubBtn:hover,
+div[data-tab="4"] .githubBtn:hover,
+div[data-tab="5"] .githubBtn:hover {
+  color: #45e868;
+  background: #fff;
+  border-color: #45e868;
 }
 .carousel {
   width: 100%;
