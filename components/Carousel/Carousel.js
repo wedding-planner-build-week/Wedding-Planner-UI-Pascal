@@ -33,4 +33,5 @@ class Carousel {
 }
 
 const carousel = document.querySelector('.carousel');
+// eslint-disable-next-line no-unused-vars
 const slide = new Carousel(carousel);
