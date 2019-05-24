@@ -280,15 +280,29 @@ p {
   transform: translateX(1px);
 }
 header {
+  vertical-align: middle;
+}
+header .nav__content {
   background-color: #fecdaa;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: none;
   flex-direction: row;
-  vertical-align: middle;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
 }
-header .burger {
+@media (min-width: 1024px) {
+  header .nav__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: none;
+    flex-direction: row;
+  }
+}
+header .nav__content .burger {
   width: 3rem;
   background: transparent;
   border: none;
@@ -297,16 +311,16 @@ header .burger {
   vertical-align: middle;
 }
 @media (min-width: 1024px) {
-  header .burger {
+  header .nav__content .burger {
     display: none;
   }
 }
 @media (min-width: 750px) {
-  header .burger {
+  header .nav__content .burger {
     display: none;
   }
 }
-header .burger .burger__btn {
+header .nav__content .burger .burger__btn {
   width: 100%;
   height: 0.2rem;
   display: block;
@@ -379,8 +393,8 @@ header .burger .burger__btn {
   flex-direction: column;
   text-align: center;
 }
-.about .intro .text__wrap h2 {
-  margin-top: 20px;
+.about .intro .text__wrap .team {
+  margin-top: 10rem;
 }
 .about .intro .text__wrap p {
   padding: 0.5rem 3rem 0.5rem 3rem;
@@ -657,6 +671,11 @@ div[data-tab="5"] .githubBtn:hover {
   height: 500px;
   max-height: 100%;
   z-index: 5;
+}
+@media (min-width: 1024px) {
+  .carousel img {
+    margin-top: 7rem;
+  }
 }
 .carousel .img {
   transition: transform 1s;
