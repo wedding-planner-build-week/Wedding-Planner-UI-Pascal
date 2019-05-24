@@ -9,7 +9,12 @@
 
 <br />
 <br />
-<img width="400" height="400" alt="wedding-planner-app-screenshot" src="/screenshots/dcaro.gif">
+### Desktop View
+<img width="800" height="1000" alt="wedding-planner-app-screenshot" src="/screenshots/desk.gif">
+
+<br />
+## Mobile/Tablet View
+<img width="800" height="1000" alt="wedding-planner-app-screenshot" src="/screenshots/mobile.gif">
 <br />
 
 
@@ -45,31 +50,41 @@ Version Control (Git)
 The follwing instructions will install the project on your local machine
 
 ```
-To be added
+1. Clone this repo
+2. Open your console and run `npm install`
 ```
 
 ### How to run
 ```
-To be added
+1. Open index.html file in the folder in any web browser of choice.
 ```
 
 ## Technology Stack
 **UI & Templates**
+```
 1. HTML & CSS
 2. Javascript
 3. LESS
+```
 
 **Server Side**
+```
 1. NodeJS
 2. Express
+3. knex
+```
 
 **Client Side**
+```
 1. Javascript/REACT
 2. HTML and CSS
+```
 
 ### Dependencies
 ```
-To be added
+1. bcryptjs
+2. cross-env
+3. dotenv
 ```
 
 
@@ -80,24 +95,29 @@ The user interface is built for easy navigation and use of the application. It i
 3. Wedding Planners can create an account and log in.
 2. The users should be able to register as a Wedding Planner.
 
-### Authentication
-```
-To be added
-```
-
 ## Deployment
-This Application will be deployed on [Heroku Deploy]()
+This Application will be deployed on [NETLIFY](https://d-wedding-planner.netlify.com/index.html)
 
 ## Useful Links
 
-1. Project Management road map [Tello]()
-2. [Github Repo]()
-3. UI templates[GH-PAGES]()
-4. Live demo on [Heroku Deploy]()
-5. Technical Design Document [TDD](https://docs.google.com/document/d/1-i-zeNTuhXcBGTPVHMVtcfnfgm8Vd3VIj8dLCfG1Wkk/edit?usp=sharing)
+1. Project Management road map [Tello](https://trello.com/b/QIuQxov6/wedding-planner)
+2. [Github Repo](https://github.com/wedding-planner-build-week/Wedding-Planner-UI-Pascal)
+3. Live demo on [NETLIFY DEPLOY](https://d-wedding-planner.netlify.com/index.html)
+4. Technical Design Document [TDD](https://docs.google.com/document/d/1-i-zeNTuhXcBGTPVHMVtcfnfgm8Vd3VIj8dLCfG1Wkk/edit?usp=sharing)
 
+
+## Team mates
+1. Kanek Perez - Team Lead
+2. Mary Sabol - Backend
+3. Christopher Lopez - Frontend
+4. Rory Maurray - UI
+5. Ulor Pascal - UI [Author](https://d-wedding-planner.netlify.com/index.html)
 
 ## Acknowledgment
-```
-To be added
-```
+
+1. [theknot](https://www.theknot.com/)
+2. [weddingfeferity](http://www.weddingfeferity.com/igbo-traditional-wedding-bride-groom/)
+3. Lambda School
+4. Matt Hardman-Lambda School
+5. Gabriel Cabrejas-Lambda School
+6. Andela
