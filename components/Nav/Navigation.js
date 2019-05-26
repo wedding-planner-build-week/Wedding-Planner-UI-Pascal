@@ -42,12 +42,12 @@ const NavData = [
   },
 ];
 
+const navMobile = document.querySelector('.mobile-nav');
+
 class NavBar {
   constructor(navbar, data) {
     this.nav = navbar;
     this.data = data;
-    this.attachLogo();
-    this.attachNavItems();
   }
 
   attachLogo() {
@@ -68,6 +68,26 @@ class NavBar {
       navItemContainer.insertAdjacentElement('beforeend', navItems);
     });
   }
+
+  createMobileNav() {
+    const ulContainer = document.createElement('ul');
+    ulContainer.classList.add('mobile-nav__items');
+    const lists = document.createElement('li');
+    lists.className += 'mobile-nav__item aside__item';
+    this.nav.append(ulContainer);
+    ulContainer.appendChild(lists);
+    this.data.links.forEach((link) => {
+      const navItems = document.createElement('a');
+      navItems.textContent = Object.keys(link);
+      navItems.href = Object.values(link);
+      lists.insertAdjacentElement('beforeend', navItems);
+    });
+  }
 }
 
-new NavBar(navBar, NavData[0]);
+const desktop = new NavBar(navBar, NavData[0]);
+const mobile = new NavBar(navMobile, NavData[0]);
+
+desktop.attachLogo();
+desktop.attachNavItems();
+mobile.createMobileNav();
