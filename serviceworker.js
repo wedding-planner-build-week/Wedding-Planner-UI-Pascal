@@ -8,8 +8,7 @@ self.addEventListener("install", event => {
         "./components/Nav/Navigation.js",
         "./components/About/About.js",
         "./components/Carousel/Carousel.js",
-        "./components/Tabs/Tabs.js",
-        "https://fonts.googleapis.com/css?family=Indie+Flower|Kanit|Pacifico|Roboto&display=swap"
+        "./components/Tabs/Tabs.js"
       ]);
     })
   );
