@@ -9,7 +9,6 @@ self.addEventListener("install", event => {
         "./components/About/About.js",
         "./components/Carousel/Carousel.js",
         "./components/Tabs/Tabs.js",
-        "./UI-Pascal/assets/images",
         "https://fonts.googleapis.com/css?family=Indie+Flower|Kanit|Pacifico|Roboto&display=swap"
       ]);
     })
