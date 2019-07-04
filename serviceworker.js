@@ -5,7 +5,10 @@ self.addEventListener("install", event => {
       cache.addAll([
         "/",
         "index.html",
-        "./UI-Pascal/components/Nav",
+        "./components/Nav/Navigation.js",
+        "./components/About/About.js",
+        "./components/Carousel/Carousel.js",
+        "./components/Tabs/Tabs.js",
         "./UI-Pascal/assets/images",
         "https://fonts.googleapis.com/css?family=Indie+Flower|Kanit|Pacifico|Roboto&display=swap"
       ]);
