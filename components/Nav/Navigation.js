@@ -1,7 +1,23 @@
+// if ("serviceWorker" in navigator) {
+//   navigator.serviceWorker.register("../../serviceWorker.js").then(() => {
+//     console.log("Service worker registered");
+//   });
+// }
+
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("../../serviceWorker.js").then(() => {
-    console.log("Service worker registered");
-  });
+  navigator.serviceWorker
+    .register("../../serviceWorker.js")
+    .then(registration => {
+      // registration worked
+      console.log("serviceWorker Registration succeeded.");
+      registration.unregister().then(boolean => {
+        // if boolean = true, unregister is successful
+      });
+    })
+    .catch(error => {
+      // registration failed
+      console.log("serviceWorker Registration failed with " + error);
+    });
 }
 
 /*
