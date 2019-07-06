@@ -4,21 +4,21 @@
 //   });
 // }
 
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker
-    .register("../../serviceWorker.js")
-    .then(registration => {
-      // registration worked
-      console.log("serviceWorker Registration succeeded.");
-      registration.unregister().then(boolean => {
-        // if boolean = true, unregister is successful
-      });
-    })
-    .catch(error => {
-      // registration failed
-      console.log("serviceWorker Registration failed with " + error);
-    });
-}
+// if ("serviceWorker" in navigator) {
+//   navigator.serviceWorker
+//     .register("../../serviceWorker.js")
+//     .then(registration => {
+//       // registration worked
+//       console.log("serviceWorker Registration succeeded.");
+//       registration.unregister().then(boolean => {
+//         // if boolean = true, unregister is successful
+//       });
+//     })
+//     .catch(error => {
+//       // registration failed
+//       console.log("serviceWorker Registration failed with " + error);
+//     });
+// }
 
 /*
  *DIsplay Backdrop when mobile side bar is toggled

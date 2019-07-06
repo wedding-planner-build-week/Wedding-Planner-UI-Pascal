@@ -1,10 +1,10 @@
 {
   "name": "Wedding Planner. A Lambda Build week project",
   "short_name": "Wedding Planner",
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "bacground_color": "#fecdaa",
+  "background_color": "#fecdaa",
   "theme_color": "#bdddb4",
   "icons": [
     {
